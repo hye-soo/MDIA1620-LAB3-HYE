@@ -15,7 +15,7 @@ function AskName() {
   console.log("WELCOME TO THE " + title); // Display the bot title
   // Ask the user for their name (or to type "exit" to quit)
   readline.question('Hello, write your hero name: ', input => 
-    readline.question('Hello, write your fRiend1name:  ', input2 =>
+    readline.question('Hello, write your friend name:  ', input2 =>
       readline.question('Hello, write your enemey name: ', input3 =>
         
         {
