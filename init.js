@@ -15,7 +15,7 @@ function AskName() {
   console.log("WELCOME TO THE " + title); // Display the bot title
   // Ask the user for their name (or to type "exit" to quit)
   readline.question('Hello, write your hero name: ', input => 
-    readline.question('Hello, write your friend name:  ', input2 =>
+    readline.question('Hello, write your fRiend1name:  ', input2 =>
       readline.question('Hello, write your enemey name: ', input3 =>
         
         {
@@ -29,14 +29,14 @@ function AskName() {
     }
     // Assign the input string (user's name) to the myName variable
     myName = input;
-    friend = input2;
-    enemy = input3;
+    fRiend1 = input2;
+    eNemy1 = input3;
 
     console.log(
 
           "Here is hero " + myName +
-          " and friend " + friend +
-          " and enemy " + enemy +
+          " and friend " + fRiend1+
+          " and enemy " + eNemy1+
           " story altogether for you"
         );
 
@@ -52,8 +52,8 @@ AskName();
 // Initialize variables
 let myName = "Hye";  // Default name if user doesn't provide one
 let chatCount = 0;          // Counter to track how many times the user has chatted
-let friend = "Friend1";
-let enemy = "Enemy1";
+let fRiend1= "fRiend1";
+let eNemy1= "eNemy1";
 
 /**
  * Function that repeatedly asks the user for input (chatting loop)
@@ -71,24 +71,24 @@ function AskFunction() {
     }
     if (chatCount ===0) {
       console.log(myName +" "+"is a queen who rules the land with kindness and bravery!"); 
-      console.log("Press enter to continue.")
+      
     }
     if (chatCount ===1) {
-      console.log(friend +" "+"is also hero of all village along with the queen!"); 
-      console.log("Press enter to continue")
+      console.log(fRiend1+" "+"is also hero of all village along with the queen!"); 
+      
     }
     if (chatCount ===2) {
-      console.log(enemy+" "+"came to challenge the queen! but"+" "+myName+" "+"is a king as well!"); 
-      console.log("Press enter to continue")
+      console.log(eNemy1+" "+"came to challenge the queen! but"+" "+myName+" "+"is a king as well!"); 
+      
     }
     if (chatCount ===3) {
-      console.log(myName+" "+"is a knight who fought"+enemy+" "+ "and saved the kingdom."); 
-    console.log("Press enter to continue"); 
+      console.log(myName+" "+"is a knight who fought"+eNemy1+" "+ "and saved the kingdom."); 
+     
 ;
     }
     if (chatCount ===4) {
       console.log(myName+" "+"is a legend that will be remembered forever!"); 
-    console.log("Press enter to continue"); 
+    
 ;
     }
 
